@@ -13,8 +13,6 @@ Suggests:
     rmarkdown,
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
-Depends: 
-    tidyverse
 Imports: 
     dplyr,
     ggplot2,
