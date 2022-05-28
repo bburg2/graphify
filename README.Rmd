@@ -26,7 +26,7 @@ You can install the development version of graphify from [GitHub](https://github
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("bburg2/graphify")
+devtools::install_github("bburg2/graphify", build_vignettes = TRUE)
 ```
 
 ## Example
