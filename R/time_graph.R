@@ -1,0 +1,27 @@
+#A function for calling graphs based on genotype and session
+#data = the data that is to be used
+#column = The colum for the data you want on the y-axis
+#title = the title of the graph, should be in ""
+#y_as = how the y_axis is called
+time_graph <- function(data, column, title, y_as){
+
+  #Make new data set of "ruwe-data"
+  duration_data <- data
+
+  #Calculate the average duration per session and genotype
+  duration_genotype_session <- duration_data %>% group_by(Session, genotype) %>% summarize(mean_duration=mean(!!column), stdev=sd(!!column))
+
+  #Load a bar_graph
+  graph <- duration_genotype_session %>%
+    ggplot(aes(x = duration_genotype_session$Session, y = duration_genotype_session$mean_duration, fill = duration_genotype_session$genotype)) +
+    geom_bar(stat = "identity", position= "dodge") +
+    geom_errorbar(aes(x=Session, ymin=mean_duration-stdev, ymax=mean_duration+stdev), width=.2,position=position_dodge(0.9), size=0.5) +
+    theme_minimal() +
+    labs(title = title,
+         x = "Session",
+         y = y_as,
+         fill = "Genotype")
+  #geom_vline(xintercept = 10, colour = "red")      # Een line waar de bekinjecellen niet meer werken
+
+  ggplotly(graph)
+}
