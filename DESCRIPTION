@@ -21,5 +21,6 @@ Imports:
     magrittr,
     plotly,
     tibble,
-    tinytex
+    tinytex,
+    readr
 VignetteBuilder: knitr
