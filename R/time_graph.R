@@ -1,8 +1,16 @@
-#A function for calling graphs based on genotype and session
-#data = the data that is to be used
-#column = The colum for the data you want on the y-axis
-#title = the title of the graph, should be in ""
-#y_as = how the y_axis is called
+#' Make a graph based on data provided by the erasmusladder
+#'
+#' @param data a dataset, provided by the erasmusladder
+#' @param column the name of the collum wich u want to use should be called with quo function
+#' @param title how you want to name the graph
+#' @param y_as how you want to name the y-axis
+#'
+#' @return a graph
+#' @export
+#'
+#' @examples
+#' data_time <- read_csv(here("data", "data.csv"))
+#' time_graph(data_time, column = quo(`Trial duration(s)`), "Average trail duration per session per genotype", "Duration (s)")
 time_graph <- function(data, column, title, y_as){
 
   #Make new data set of "ruwe-data"
