@@ -4,7 +4,7 @@
 #' @param column the name of the collum wich u want to use should be called with quo function
 #' @param title how you want to name the graph
 #' @param y_as how you want to name the y-axis
-#'
+#' @import plotly
 #' @return a graph
 #' @export
 #'
