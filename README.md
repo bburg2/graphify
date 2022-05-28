@@ -34,23 +34,11 @@ library(graphify)
 #> ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
 #> ✖ dplyr::filter() masks stats::filter()
 #> ✖ dplyr::lag()    masks stats::lag()
-library(readr)
-library(here)
-#> here() starts at C:/Users/Bas/Desktop/School/Programmeren/datascience/graphify
-library(tidyverse)
-library(dplyr)
-library(plotly)
-#> 
-#> Attaching package: 'plotly'
-#> The following object is masked from 'package:ggplot2':
-#> 
-#>     last_plot
-#> The following object is masked from 'package:stats':
-#> 
-#>     filter
-#> The following object is masked from 'package:graphics':
-#> 
-#>     layout
+#library(readr)
+#library(here)
+#library(tidyverse)
+#library(dplyr)
+#library(plotly)
 
 # load in some data
 ## data_time <- read_csv(here("data", "data.csv"))
