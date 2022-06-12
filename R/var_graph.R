@@ -1,6 +1,6 @@
 #' This function function summaries data from custom columns
 #'
-#' @param data a dataset provided by R
+#' @param data a dataset provided by the erasmusladder
 #' @param col_steptype wich collum you like to select, should be called with the quo function
 #' @param col_y The collum that contains the group you want to use, should be called with the quo function
 #' @param session_num The amount of sessions you want to look at

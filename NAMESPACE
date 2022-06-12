@@ -3,6 +3,7 @@
 export("%>%")
 export(min_max_norm)
 export(time_graph)
+export(time_violin)
 export(var_graph)
 import(plotly)
 importFrom(magrittr,"%>%")

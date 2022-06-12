@@ -7,7 +7,7 @@
 var_graph(data, col_steptype, col_y, session_num)
 }
 \arguments{
-\item{data}{a dataset provided by R}
+\item{data}{a dataset provided by the erasmusladder}
 
 \item{col_steptype}{wich collum you like to select, should be called with the quo function}
 
